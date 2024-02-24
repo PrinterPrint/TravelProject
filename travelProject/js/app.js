@@ -34,6 +34,10 @@ function searchCondition() {
               </div>`;
           });
         });
+        if (matchedCountries.length > 0) {
+          found = true;
+        }
+
       }
 
       // Search for temples
@@ -55,7 +59,10 @@ function searchCondition() {
             <p>${temple.description}</p>
           </div>`;
         });
-        found = true;
+        if (matchedTemples.length > 0) {
+          found = true;
+        }
+
       }
 
       // Search for beaches
@@ -77,8 +84,13 @@ function searchCondition() {
             <p>${beach.description}</p>
           </div>`;
         });
-        found = true;
+        if (matchedBeaches.length > 0) {
+          found = true;
+        }
+
       }
+
+      console.log(found)
 
       // If no matches found
       if(!found) {
