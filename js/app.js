@@ -1,4 +1,7 @@
 function searchCondition() {
+  // Prevent default form submission behavior
+  event.preventDefault();
+  
   const input = document.getElementById('conditionInput').value.toLowerCase();
   const resultDiv = document.getElementById('result');
   resultDiv.innerHTML = '';
