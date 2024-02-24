@@ -289,7 +289,9 @@
 }
 
 body {
-  background-image: url('resources/img/maki.png');
+  background-image: url('https://cdn.contexttravel.com/image/upload/c_fill,q_60,w_2600/v1691082516/production/city/hero_image_44_16910825160bc81441.jpg');
+
+  /*background-image: url('/resources/img/maki.png');*/
   background-size: cover; /* This ensures that the image covers the entire background */
   background-position: center; /* This centers the background image */
 
@@ -298,13 +300,26 @@ body {
 
 
 button {
-  border-radius: 0;
+  border-radius: 20px;
   padding: 7px 15px;
   background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
 }
+
+#bookNow {
+  font-size: 200%;
+}
+
+.social-icon {
+  font-size: 300%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
 
 
 button:focus:not(:focus-visible) {
@@ -648,6 +663,18 @@ button:not(:disabled),
   line-height: 1 !important;
 }
 
+.fw-normal{
+  font-weight: 900 !important;
+}
+
+.lead {
+  font-size: 300%;
+  font-style: revert;
+  color: blue;
+}
+
+
+
 
 
 nav ul {
@@ -680,9 +707,12 @@ nav a {
 /* Basic CSS for the form elements */
 
 
-h1 {
-  margin-bottom: 20px;
-}
+  h1 {
+    margin-bottom: 10px;
+    margin-top: 40%;
+    font-size: 400%;
+    color: crimson;
+  }
 
 div {
   margin-bottom: 10px;
@@ -694,10 +724,24 @@ label {
 }
 
 input[type="text"],
-input[type="number"],
+input[type="submit"],
 select {
-  width: 210px;
+  width: 300px;
   padding: 5px;
+  /*border: none;*/
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+
+form {
+    border: 1px solid grey;
+    border-radius: 100px;
+    padding: 8px 10px;
+    display: flex;
+    gap: 5px;
+    width: 500px;
+    margin: 0 auto;
 }
 
 
@@ -733,3 +777,21 @@ h2 {
   width: 200px;
   height: 100px;
 }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Adjust the maximum width of the form as needed */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px; /* Adjust the spacing between label and input */
+  }
+
+  input, textarea, .name-form {
+    width: 200%; /* Make inputs and textarea full width */
+    padding: 8px; /* Adjust the padding of inputs and textarea */
+    border: 1px solid #ccc; /* Add border for inputs and textarea */
+    border-radius: 4px; /* Add border radius for inputs and textarea */
+  }
